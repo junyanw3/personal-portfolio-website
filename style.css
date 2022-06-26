@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   /* A smooth scroll behavior slides the page down to the next section on nav link click */
   scroll-behavior: smooth;
@@ -22,7 +23,7 @@ body {
   color: #eee8e8;
   font-family: "Poppins";
   margin-left: 107px;
-  margin-right: 107px
+  margin-right: 107px;
 }
 
 /* When the screen is smaller, the top contact info moves horizontal to vertical */
@@ -37,7 +38,7 @@ body {
     font-size: 15px;
   }
   .h2 {
-    font-size: .2rem;
+    font-size: 0.2rem;
   }
 }
 
@@ -59,7 +60,7 @@ h3 {
 
 h4 {
   font-family: "Lato";
-  color: #0077b6; 
+  color: #0077b6;
 }
 
 h5 {
@@ -85,8 +86,8 @@ h5 {
   /* ADD CSS HERE */
   color: #f0efef;
   font-family: "Montsterrat";
-  font-size: 4em; 
-  margin-bottom: 30px; 
+  font-size: 4em;
+  margin-bottom: 30px;
 }
 
 .material-icons {
@@ -107,7 +108,6 @@ h5 {
     height: 800px;
   }
 }
-
 
 /* The side navigation menu */
 .sidenav {
@@ -143,8 +143,8 @@ h5 {
 
 /* The icons themseleves for LinkedIn and Github*/
 .social-link-icons {
-  margin-left: .2em;
-  margin-right: .2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
   color: #f1f1f1;
 }
 
@@ -157,7 +157,7 @@ h5 {
   padding: 20px;
   background-color: #f1f1f1;
   /* Curves the corners of the container */
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   /* Adds a shadow around the container */
   box-shadow: 0 10px 20px rgba(71, 69, 69, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border: 1px solid rgb(175, 170, 170);
