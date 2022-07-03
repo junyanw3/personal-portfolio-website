@@ -1,204 +1,640 @@
 * {
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-
-html,
-body {
-  height: 100%;
-  /* A smooth scroll behavior slides the page down to the next section on nav link click */
-  scroll-behavior: smooth;
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
 }
-
-body {
-  margin: 0;
-  font-family: "Lato";
-}
-
-.header-contact-info {
-  /* Spaces the contact icons and text out along the top of the page */
-  display: flex;
-  justify-content: space-between;
-  /* Adds space above the contact icons and text so they don't hit the top of the page */
-  padding-top: 20px;
-  color: #eee8e8;
-  font-family: "Poppins";
-  margin-left: 107px;
-  margin-right: 107px;
-}
-
-/* When the screen is smaller, the top contact info moves horizontal to vertical */
-
-@media screen and (max-width: 1109px) {
-  .header-contact-info {
-    /* Spaces the contact icons and text in rows */
-    display: grid;
-    float: left;
-    text-align: left;
-    margin-left: 5px;
-    font-size: 15px;
-  }
-  .h2 {
-    font-size: 0.2rem;
-  }
-}
-
 a {
-  /*makes the cursor a hand when hovering over a link*/
-  cursor: pointer;
-  color: white;
+	cursor: pointer;
+    color: #e9edef;
+	text-decoration: none;
 }
-
-h1 {
-  font-family: "Lato";
-  color: #03045e;
-}
-
-h3 {
-  font-family: "Lato";
-  color: #0077b6;
-}
-
-h4 {
-  font-family: "Lato";
-  color: #0077b6;
-}
-
-h5 {
-  font-family: "Arial";
-}
-
-.nav-container {
-  position: fixed;
-  height: 100%;
-}
-
-/* Remove the bullet points from lists */
-.nav-list {
-  padding: 0;
-  list-style-type: none;
-}
-
-.no-bullets {
-  list-style-type: none;
-}
-
-.heading-font {
-  /* ADD CSS HERE */
-  color: #f0efef;
-  font-family: "Montsterrat";
-  font-size: 4em;
-  margin-bottom: 30px;
-}
-
-.material-icons {
-  /* This allows the icons to line up with the text */
-  vertical-align: middle;
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-/* Decrease font size when screen in 685px or smaller */
-
-@media screen and (max-width: 685px) {
-  .heading-font {
-    font-size: 3em;
-  }
-  .page-section {
-    /* The sections can take up more height when the screen size is reduced since the width is narrower, so the height is needed */
-    height: 800px;
-  }
-}
-
-/* The side navigation menu */
-.sidenav {
-  height: 100%;
-  /* Set the width of the sidebar */
-  width: 160px;
-  /* Fixed Sidebar (stay in place on scroll) */
-  position: fixed;
-  background-color: #00b4d8;
-  overflow-x: hidden;
-  padding-top: 106px;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  font-size: 18px;
-  color: #f0efef;
-  font-family: "Poppins";
-}
-
-/* When you mouse over the navigation links, change their color */
-.nav-item a:hover {
-  color: #90e0ef;
-}
-
-/* The container for the Linked-In and Github links */
-.social-links {
-  font-size: 4em;
-  display: flex;
-  /* Puts the icons in the center of the page */
-  justify-content: center;
-}
-
-/* The icons themseleves for LinkedIn and Github*/
-.social-link-icons {
-  margin-left: 0.2em;
-  margin-right: 0.2em;
-  color: #f1f1f1;
-}
-
-.page-container {
-  margin-left: 160px;
-  height: 100%;
-}
-
-.page-section {
-  padding: 20px;
-  background-color: #f1f1f1;
-  /* Curves the corners of the container */
-  border-radius: 0.25rem;
-  /* Adds a shadow around the container */
-  box-shadow: 0 10px 20px rgba(71, 69, 69, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border: 1px solid rgb(175, 170, 170);
-  /* Creates a scrollbar on the container when the window size is reduced */
-  height: 657x;
-  overflow-y: auto;
-}
-
-@media screen and (min-width: 686px) {
-  .page-section {
-    /* The section height should be smaller when there is more width on the screen */
-    min-height: 500px;
-  }
-}
-
-.home-section {
-  padding-top: 100px;
-  /* Center the home page font */
-  text-align: center;
-}
-
 .container {
-  padding-top: 100px;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+p {
+	color: #e9edef;
+	font-size: 2rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.section-title span {
+    color: #9ecfe7;
+}
+.social-links { 
+	/* The container for the Linked-In and Github links */
+	padding-top: 20px;
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+}
+.social-link-icons {
+	/* The icons themseleves for LinkedIn and Github*/
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    color: #e9edef;
+}
+.social-links i {
+	padding: 10px 14px;
+    width: 40px;
+    height: 40px;
+	text-decoration: none; 
+	-o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.social-links .icon-linkedin:hover {
+    color: #04669A;
+	background-color: #e9edef;
+}
+.social-links .icon-github:hover {
+    color: #040204;
+	background-color: #e9edef;
 }
 
-.main-section {
-  width: 100%;
-  height: 100%;
+
+/* Header section */
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 8vh;
+	background-color: black;
+}
+#header .nav-bar {
+    float: left;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+    overflow: hidden;
+    width: 100%; 
+    top: 0;
+}
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(31, 30, 30);
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+#header .nav-list ul.active {
+	left: 0%;
+}
+#header .nav-list ul a {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	color: #e9edef;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+#header .nav-list ul a::after {
+	content: attr(data-after);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: rgb(31, 30, 30);
+	font-size: 13rem;
+	letter-spacing: 50px;
+	z-index: -1;
+	transition: 0.3s ease letter-spacing;
+}
+#header .nav-list ul li:hover a::after {
+	transform: translate(-50%, -50%) scale(1);
+	letter-spacing: initial;
+}
+#header .nav-list ul li:hover a {
+	color: #9ecfe7;
+}
+#header .hamburger {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid #e9edef;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(0.8);
+	margin-right: 20px;
+}
+#header .hamburger:after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid #e9edef;
+	animation: hamburger_puls 1s ease infinite;
+}
+#header .hamburger .bar {
+	height: 2px;
+	width: 30px;
+	position: relative;
+	background-color: #e9edef;
+	z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-color: #e9edef;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+}
+#header .hamburger .bar::after {
+	top: 8px;
+}
+#header .hamburger .bar::before {
+	bottom: 8px;
+}
+#header .hamburger.active .bar::before {
+	bottom: 0;
+}
+#header .hamburger.active .bar::after {
+	top: 0;
+}
+/* End Header section */
+
+
+/* Home Section */
+#home {
+	background-image: url("https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/header.jpg?v=1656827114035");
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#home::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.3;
+	z-index: -1;
+}
+#home h1 {
+	display: block;
+	font-size: 6rem;
+	position: center;
+    text-align: center;
+	color: #e9edef;
+}
+#home h2 {
+	padding-top: 25px;
+	display: block;
+	font-size: 3rem;
+	position: center;
+    text-align: center;
+	color: #e9edef;
+}
+/* End Home Section */
+
+
+/* About Section */
+#about .about {
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-color: #282b30;
+}
+#about .about-item {
+	flex-basis: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	padding: 30px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#about .about-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#about .about-item .left img {
+	height: 300px;
+	width: 300px;
+	border-radius: 10px;
+}
+#about .about-item h2 {
+	font-size: 3.5rem;
+	color: #7289da;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+#about .about-item p {
+	margin-bottom: 20px;
+	text-align: left;
+}
+/* End About Section */
+
+
+/* Education & Skills Section */
+#education-and-skills .education-and-skills {
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-color: #282b30;
+}
+#education-and-skills .education-and-skills-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	padding: 30px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	max-width: 1200px;
+}
+#education-and-skills .education-and-skills-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#education-and-skills .education-and-skills-item h1 {
+	font-size: 3.5rem;
+	color: #7289da;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+#education-and-skills .education-and-skills-item h2 {
+	font-size: 2.5rem;
+	color: #e9edef;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+#education-and-skills .education-and-skills-item p {
+	color: #e9edef;
+	text-align: left;
+	text-align: left;
+}
+/* End Education & Skills Section */
+
+
+/* Projects section */
+#projects .projects {
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-color: #282b30;
+}
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 1200px;
+}
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: #e9edef;
+}
+#projects .project-info h1 {
+	font-size: 3.5rem;
+	color: #7289da;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+#projects .project-info p {
+	color: #e9edef;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	/* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+	/* opacity: 0.7; */
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+/* End Projects section */
+
+
+/* Work Experience Section */
+#work-experience .work-experience {
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-color: #282b30;
+}
+#work-experience .work-experience-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	padding: 30px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	max-width: 1200px;
+}
+#work-experience .work-experience-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#work-experience .work-experience-item h1 {
+	font-size: 3.5rem;
+	color: #7289da;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+#work-experience .work-experience-item h2 {
+	font-size: 2.5rem;
+	color: #e9edef;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+#work-experience .work-experience-item p {
+	color: #e9edef;
+	text-align: left;
+}
+/* End Work Experience Section */
+
+
+/* Keyframes */
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: #e9edef;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: #9ecfe7;
+		font-weight: 500;
+	}
+}
+/* End Keyframes */
+
+
+@media (max-width: 947px){
+    /* About Section */
+    #about .about {
+        max-width: 930px;
+    }
+    #about .about-item .column{
+        width: 100%;
+    }
+    #about .about-item .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 10px;
+	}
+    #about .about-item .right{
+        flex: 100%;
+    }
+	/* End About Section */
 }
 
-/* The background color of the webpage sections */
-/* nth of type (even) or (odd) means every other element is applied this style, so we can alternate background colors */
-.section-background:nth-of-type(even) {
-  background-image: linear-gradient(to right top, #00b4d8, #0077b6, #03045e);
-}
 
-.section-background:nth-of-type(odd) {
-  background-image: linear-gradient(to right top, #03045e, #0077b6, #00b4d8);
-}
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.section-title {
+		font-size: 6rem;
+	}
 
-/* Sets the gradient background color for the home page */
-.home-background {
-  background-image: linear-gradient(to right top, #03045e, #0077b6, #00b4d8);
+
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/* End Project */
+}
+/* End Media Query For Tablet */
+
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+	/* Header */
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+}
+/* End  Media Query For Desktop */
+
+
+/* Footer */
+#footer{
+    height: auto;
+    padding-top: 40px;
+	width: 100%;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+	background-color: black;
+}
+.footer-content h1{
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	color: #e9edef;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+.footer-e1 {
+    float: left;
+	width: 33%;
+	text-align: left;
+}
+.footer-e2 {
+    float: left;
+	width: 33%;
+	text-align: center;
+}
+.footer-e3 {
+    float: left;
+	width: 34%;
+	text-align: right;
 }
