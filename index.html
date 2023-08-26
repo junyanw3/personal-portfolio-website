@@ -1,318 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+
+<!-- W3C validator: ttp://validator.w3.org -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Junyan Wu">
+    <meta name="description" content="A personal portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- you would link to an external stylesheet here! -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!-- you would also link to Bootstrap here! -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <title>Junyan Wu</title>
-  </head>
+</head>
 
-  <body>
-    <!-- Header -->
-    <section id="header">
-      <div class="header container">
-        <div class="nav-bar">
-          <div class="brand"></div>
-          <div class="nav-list">
-            <div class="hamburger">
-              <div class="bar"></div>
+<body>
+    <!-- Header Begin -->
+    <div id="header" class="header container">
+        <div class="dropdown">
+            <a class="dropdown-button" href="#home" data-after="Home">Home ▼</a>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#about-me" data-after="About Me">About Me</a></li>
+                    <li><a href="#education-and-skills" data-after="Education & Skills">Education And Skills</a></li>
+                    <li><a href="#work-experience" data-after="Work Experience">Work Experience</a></li>
+                    <li><a href="#projects" data-after="Projects">Projects</a></li>
+                </ul>
             </div>
-            <ul>
-              <li><a href="#home" data-after="Home">Home</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li>
-                <a href="#education-and-skills" data-after="Education & Skills"
-                  >Education & Skills</a
-                >
-              </li>
-              <li><a href="#projects" data-after="Projects">Projects</a></li>
-              <li>
-                <a href="#work-experience" data-after="Work Experience"
-                  >Experience</a
-                >
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- End Header -->
+    </div>
+    <!-- Header End-->
 
-    <!-- Home Section  -->
-    <section id="home">
-      <div class="home container">
+    <!-- Home Begin -->
+    <div id="home" class="home container">
         <div class="home-section">
-          <div><h1>Junyan Wu</h1></div>
-          <div>
-            <h2>
-              Computer Science Student at University of California - Irvine
-            </h2>
-          </div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/junyanwu3/">
-              <i class="social-link-icons icon-linkedin"></i>
-            </a>
-            <!-- Comment out the git hub link -->
-            <a href="https://github.com/junyanw3">
-              <i class="social-link-icons icon-github"></i>
-            </a>
-          </div>
+            <div><h1>Junyan Wu</h1></div>
+            <div><h2>Software Developer and Computer Science Graduate at UC Irvine</h2></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/junyanwu3/">
+                    <i class="social-link-icons icon-linkedin"></i>
+                </a>
+                <a href="https://github.com/junyanw3">
+                    <i class="social-link-icons icon-github"></i>
+                </a>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- End Home Section  -->
+    </div>
+    <!-- Home End -->
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="about container">
+    <!-- About Begin -->
+    <div id="about-me" class="about container">
         <h1 class="section-title"><span>About Me</span></h1>
         <div class="about-item">
-          <div class="column left">
-            <img
-              src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/junyan0.JPG?v=1656827115081"
-              alt=""
-            />
-          </div>
-          <div class="column right">
-            <h2>Hello!</h2>
-            <p>
-              My name is Junyan and I am currently a 4th-year student at the
-              University of California - Irvine. I plan on graduating in June
-              2023 with a B.S. in Computer Science.
+            <img src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/Wu%2C%20Junyan.jpg?v=1693081819965" 
+                alt="Junyan Wu"
+                style="filter: brightness(80%);"
+            >
+            <h2>Hi!</h2>
+            <p>My name is Junyan (I also go by Jun) and I am currently a Software Developer at BNY Mellon. I graduated from the University 
+              of California - Irvine in June 2023 with a B.S. in Computer Science and a specializaiton in Information.
             </p>
             <p>
-              I started programming during my 1st-year and I have been
-              fascinated with programming and technology. It is my goal to work
-              as a software engineer. My experience includes my coursework, work
-              experience as a instructor, and side projects such as this
-              website!
+              My experiences include my work experience, course work, and personal projects such as this website!
             </p>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- End About Section  -->
+    </div>
+    <!-- About End -->
 
-    <!--Education and Skills Section -->
-    <section id="education-and-skills">
-      <div class="education-and-skills container">
+    <!--Education and Skills Begin -->
+    <div id="education-and-skills" class="education-and-skills container">
         <h1 class="section-title"><span>Education & Skills</span></h1>
         <div class="education-and-skills-item">
-          <h1>Education</h1>
-          <h2>University of California - Irvine</h2>
-          <p>Expected Graduation: June 2023</p>
-          <p>Bachelor of Science, Computer Science, GPA: 3.72/4.0</p>
-          <p></p>
-          <h1>Skills</h1>
-          <h2>Technical</h2>
-          <p>
-            Python, C++, Java, SQL (PostgreSQL, MySQL), HTML, CSS, JavaScript,
-            MIPS Assembly
-          </p>
-          <p></p>
-          <h2>Frameworks/Libraries</h2>
-          <p>Amazon Web Services (AWS), Tomcat, React, Node</p>
-          <p></p>
-          <h2>Developer Tools</h2>
-          <p>
-            Git/GitHub, Visual Studio Code, IntelliJ, Eclipse, Google Colab,
-            Slack
-          </p>
+            <h2>Education</h2>
+            <h3>University of California - Irvine</h3>
+            <p>Sept. 2019 - June 2023</p>
+            <p>B.S., Computer Science, GPA: 3.6/4.0</p>
+            <h2>Skills</h2>
+            <h3>Technical</h3>
+            <p>Python, MySQL, PostgreSQL, Java, C++, HTML, CSS, JavaScript</p>
+            <h3>Frameworks and Libraries</h3>
+            <p>Amazon Web Services (AWS), Spring Boot, Tomcat, jQuery, RESTful APIs, JDBC, React.js, Node.js</p>
+            <h3>Developer Tools</h3>
+            <p>Git/GitHub/GitLab, Postman, Visual Studio Code, IntelliJ, Eclipse, Google Colab, Slack</p>
         </div>
-      </div>
-    </section>
-    <!-- End Education and Skills Section -->
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="projects container">
-        <div class="projects-header">
-          <h1 class="section-title"><span>Projects</span></h1>
-        </div>
-        <div class="all-projects">
-          <div class="project-item">
-            <div class="project-info">
-              <h1>This Website!</h1>
-              <p>
-                → Designed a personal portfolio website to highlight my personal
-                experiences and skills
-              </p>
-              <p>
-                → Created dynamic content on the responsive static website using
-                HTML and CSS
-              </p>
-            </div>
-            <div class="project-img">
-              <img
-                src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/this-website.PNG?v=1656827121130"
-                alt="img"
-              />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Fabflix</h1>
-              <p>
-                → Built and hosted a website on AWS utilizing full stack
-                development for customers to login, browse, and shop for movies,
-                and employees to login and add movies to the database
-              </p>
-              <p>
-                → Added reCAPTCHA to prevent bot attacks and encrypted customer
-                and employee passwords to protect personal data
-              </p>
-              <p>
-                → Parsed XML dataset files to bulk upload movies and actors, and
-                optimized MySQL queries toreduce parsing time 16x
-              </p>
-              <p>
-                → Implemented with HTML, CSS, Java, JavaScript, MySQL, Tomcat
-              </p>
-            </div>
-            <div class="project-img">
-              <img
-                src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/fabflix.PNG?v=1669334246591"
-                alt="img"
-              />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Checkers AI</h1>
-              <p>
-                → Developed using the Monte Carlo Tree Search algorithm to
-                generate the best possible move
-              </p>
-              <p>
-                → Built in Python to implement the Checkers AI board and game
-              </p>
-            </div>
-            <div class="project-img">
-              <img
-                src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/checkers-ai.PNG?v=1656827102264"
-                alt="img"
-              />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Crux Compiler</h1>
-              <p>
-                → Built a compiler for a programming language called “Crux” in
-                Java
-              </p>
-              <p>
-                → The compiler will parse the Crux source code into a ANTLR
-                parse tree
-              </p>
-              <p>
-                → The parse tree will then be “lowered” into an Abstract Syntax
-                Tree (AST) with semantic checks
-              </p>
-              <p>
-                → The AST will be "lowered" again to the intermediate
-                representation, and then generated to assembly language
-              </p>
-            </div>
-            <div class="project-img">
-              <img
-                src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/crux.PNG?v=1661386269206"
-                alt="img"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
-
-    <!-- Work Experience Section -->
-    <section id="work-experience">
-      <div class="work-experience container">
-        <h1 class="section-title"><span>Experience</span></h1>
+    </div>
+    <!-- Education and Skills End -->
+  
+    <!-- Work Experience Begin -->
+    <div id="work-experience" class="work-experience container">
+        <h1 class="section-title"><span>Work Experience</span></h1>
         <div class="work-experience-item">
-          <h1>Software Engineering Intern</h1>
-          <h2>RadicalX</h2>
-          <h2>Sept. 2022 - Nov. 2022</h2>
-          <h2>Remote</h2>
-          <p>
-            → Built an apprenticeship job application website, allowing
-            partnered companies to create job posts and better advertise
-            available positions
-          </p>
-          <p>
-            → Developed the front end web application using React, Node, CSS,
-            Firebase, to create modern website that attracts users to the job
-            board
-          </p>
-          <p>
-            → Collaborated with a team of Software Developers and Product
-            Managers on a weekly basis to give updates and discuss new
-            requirements
-          </p>
+          <h2>Software Developer</h2>
+          <h3>BNY Mellon</h3>
+          <p>Aug. 2023 - Present</p>
         </div>
-      </div>
-    </section>
-    <!-- End Work Experience Section  -->
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-content-info">
-          <div class="footer-e1">
-            <h1>
-              <span class="material-icons">email</span> junyanwu3 @gmail.com
-            </h1>
-          </div>
-          <div class="footer-e2"><h1>Made with ♥ by Junyan Wu</h1></div>
-          <div class="footer-e3">
-            <h1>
-              <span class="material-icons">location_on</span> San Francisco, CA;
-              Irvine, CA
-            </h1>
-          </div>
+        <div class="work-experience-item">
+            <h2>Software Engineering Intern</h2>
+            <h3>RadicalX</h3>
+            <p>Sept. 2022 - Nov. 2022</p>
+            <p>→ Built an apprenticeship job application website that enabled partnered companies to create 
+                job posts and advertise available positions.
+            </p>
+            <p>→ Developed the front-end web application using React, Node, HTML, CSS, and Firebase, to create 
+                a modern website that attracts users to the job board.
+            </p>
+            <p>→ Worked with a team of Software Developers and Product Managers on a weekly basis, providing 
+                updates and discussing new requirements as part of an Agile Software Development process.
+            </p>
         </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+    <!-- Work Experience End -->
 
-    <!-- This is where scripts go, we add the bootstrap library JS imports here -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Projects Begin -->
+    <div id="projects" class="projects container">
+        <h1 class="section-title"><span>Projects</span></h1>
+        <div class="all-projects">
+            <div class="project-item">
+                <div class="project-info">
+                    <h2>This Website!</h2>
+                    <p>→ Designed and maintained a personal portfolio website to showcase my experiences and skill.</p>
+                    <p>→ Utilized HTML and CSS to create dynamic and responsive content on the website.
+                    </p>
+                </div>
+                <div class="project-img">
+                    <img src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/projects-this-website.jpg?v=1674518413766"
+                        alt="Home page of this website">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h2>Fabflix Movie Database Web App</h2>
+                    <p>→ Designed and implemented a full-stack website hosted on AWS that allowed customers to log 
+                        in with sessions, browse and purchase from a catalog of thousands of movies, and employees 
+                        to log in and add movies to the data base.
+                    </p>
+                    <p>→ Incorporated reCAPTCHA to block bot attacks and encrypted customer and employee passwords 
+                        using SHA256 hashing to safeguard personal information.
+                    </p>
+                    <p>→ Constructed an ETL pipeline to parse large XML dataset files for bulk uploading of movies 
+                        and actors, and enhanced MySQL queries to decrease parsing time by a factor of 16.
+                    </p>
+                    <p>→ Implemented a search feature for customers using full-text search, and autocomplete with 
+                        caching support.
+                    </p>
+                </div>
+                <div class="project-img">
+                    <img src="https://cdn.glitch.global/67ed69f9-ed04-4962-a6de-e8b54434171e/fabflix.PNG?v=1669334246591"
+                        alt="Fabflix search feature">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h2>Google Images Tree Detection</h2>
+                    <!-- Google Images Tree Detection System 
+                    Demo Video YouTube Link: https://www.youtube.com/watch?v=43iLQSBju7A-->
+                    <p>→ Collaborated with Student Services, a company sponsor that provides outdoor home maintenance 
+                        services, on a weekly basis to discuss new requirements and report progress on an app that 
+                        displays a list of addresses that may require gutter cleaning services.
+                    </p>
+                    <p>→ Used aerial view images and machine learning algorithms (Faster R-CNN and Retina Net) to train 
+                        an object detection model that achieved a ~72% accuracy rate of identifying homes that have trees 
+                        overlapping them.
+                    </p>
+                    <p>→ Developed a Python-based user interface that allows our sponsor to input a zip code that calls 
+                        the backend to display a list of target addresses on demand.
+                    </p>
+                </div>
+                <div class="project-img">
+                    <img src="https://cdn.glitch.me/67ed69f9-ed04-4962-a6de-e8b54434171e/Google_Images_Tree_Detection_System.gif?v=1673419817615" 
+                        alt="Gif demo of how the google images tree detection system works">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+</body>
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-      type="text/javascript"
-    ></script>
-    <!-- End Scripts -->
-  </body>
 </html>
